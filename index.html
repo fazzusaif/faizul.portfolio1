@@ -1,0 +1,494 @@
+portfolio code complete 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizul - .NET Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-bar {
+            transition: width 2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">Faizul</span>
+                    <span class="ml-2 text-sm text-purple-600">.NET Developer</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-purple-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-purple-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-white bg-opacity-20 p-1">
+                    <img src="" class="w-full h-full rounded-full object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNjQiIGZpbGw9IiNEN0Q3RDciLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjNjY2NjY2Ij5GPC90ZXh0Pjwvc3ZnPg=='">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Faizul</h1>
+                <p class="text-xl md:text-2xl text-white opacity-90 mb-8">.NET Developer </p>
+                <p class="text-lg text-white opacity-80 max-w-2xl mx-auto mb-8">
+                    Passionate .NET developer specializing in building robust web applications using modern technologies and best practices.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/022cc80a-0675-4958-87c5-50c037094d66.png" alt="Faizul working on a laptop with code editor open, showing .NET development environment" class="rounded-lg shadow-xl w-full" onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hello, I'm Faizul</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate .NET developer currently pursuing my Bachelor of Computer Applications (BCA) degree, 
+                        which I will complete in 2026. My journey in software development has been focused on mastering 
+                        Microsoft technologies and building scalable web applications.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">IFTM University Moradabad</h4>
+                                <p class="text-gray-600">BCA (Bachelor of Computer Applications)</p>
+                                <p class="text-sm text-gray-500">Expected Completion: 2026</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-code text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Specialization</h4>
+                                <p class="text-gray-600">.NET Framework & Web Development</p>
+                                <p class="text-sm text-gray-500">C#, ASP.NET, .NET Core, SQL Server</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Here are some of the projects I've built using modern .NET technologies</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Job Portal -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed322f53-c12d-45f2-80a9-34cb12eb763f.png" alt="Job portal application interface showing job listings and search functionality with modern UI design" class="w-full h-full object-cover mix-blend-overlay opacity-50" onerror="this.style.display='none'">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">ASP.NET</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Job Portal </h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive job portal built with ASP.NET that allows job seekers to search for opportunities 
+                            and employers to post job listings with advanced filtering and application tracking.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Technologies Used:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">C#</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">ASP.NET</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ajax</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: CRUD Operations -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-blue-600 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94a9b586-cbe1-4736-9eca-b919201b8908.png" alt="CRUD operations interface showing data management dashboard with create, read, update, delete functionality" class="w-full h-full object-cover mix-blend-overlay opacity-50" onerror="this.style.display='none'">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">.NET Core MVC</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">CRUD Operations Application</h3>
+                        <p class="text-gray-600 mb-4">
+                            A modern web application demonstrating full CRUD (Create, Read, Update, Delete) operations 
+                            with responsive design, real-time updates using Ajax, and efficient database management.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Technologies Used:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">C#</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">.NET Core MVC</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ajax</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">My expertise in various technologies and frameworks</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-window-maximize text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Frontend</h3>
+                    <p class="text-gray-600 text-sm">HTML5, CSS3, JavaScript, Ajax, Responsive Design</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-server text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Backend</h3>
+                    <p class="text-gray-600 text-sm">C#, ASP.NET, .NET Core MVC, REST APIs</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-database text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Database</h3>
+                    <p class="text-gray-600 text-sm">SQL Server, Database Design</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Tools</h3>
+                    <p class="text-gray-600 text-sm">Visual Studio, Git,</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">I'm always interested in new opportunities and collaborations</p>
+                <div class="w-20 h-1 bg-purple-400 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Let's Connect</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300">Email</p>
+                                <p class="font-medium">fazzu5530@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300">Phone</p>
+                                <p class="font-medium">+91 7464956057</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300">Location</p>
+                                <p class="font-medium">Noida-201309, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Send a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-purple-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-purple-400">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-purple-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">© 2025 Faizul. All rights reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced navigation system with history management
+        document.addEventListener('DOMContentLoaded', function() {
+            // Store navigation state
+            let navigationHistory = [];
+            let currentPosition = -1;
+
+            // Enhanced smooth scrolling with history management
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    
+                    if (target) {
+                        // Add to navigation history
+                        navigationHistory.push(targetId);
+                        currentPosition = navigationHistory.length - 1;
+                        
+                        // Smooth scroll to target
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                        // Update URL hash without triggering scroll
+                        history.pushState({ section: targetId }, '', targetId);
+                    }
+                });
+            });
+
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', function(event) {
+                if (event.state && event.state.section) {
+                    const target = document.querySelector(event.state.section);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+
+            // Enhanced form submission handling
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const name = formData.get('name') || 'User';
+                    
+                    // Show success message
+                    alert(Thank you for your message, ${name}! I will get back to you soon.);
+                    this.reset();
+                    
+                    // Add to form submission history
+                    const submission = {
+                        timestamp: new Date().toISOString(),
+                        formData: Object.fromEntries(formData)
+                    };
+                    localStorage.setItem('lastSubmission', JSON.stringify(submission));
+                });
+            }
+
+            // Enhanced scroll animations with intersection observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all cards and sections
+            document.querySelectorAll('.card-hover, section').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(element);
+            });
+
+            // Keyboard navigation support
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                    // Navigate to previous section
+                    if (currentPosition > 0) {
+                        currentPosition--;
+                        const target = document.querySelector(navigationHistory[currentPosition]);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                    // Navigate to next section
+                    if (currentPosition < navigationHistory.length - 1) {
+                        currentPosition++;
+                        const target = document.querySelector(navigationHistory[currentPosition]);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                }
+            });
+
+            // Touch swipe support for mobile
+            let touchStartX = 0;
+            let touchStartY = 0;
+
+            document.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+                touchStartY = e.changedTouches[0].screenY;
+            });
+
+            document.addEventListener('touchend', function(e) {
+                const touchEndX = e.changedTouches[0].screenX;
+                const touchEndY = e.changedTouches[0].screenY;
+                const diffX = touchEndX - touchStartX;
+                const diffY = touchEndY - touchStartY;
+
+                // Horizontal swipe (left/right for navigation)
+                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                    if (diffX > 0) {
+                        // Swipe right - go back
+                        window.history.back();
+                    } else {
+                        // Swipe left - go forward
+                        window.history.forward();
+                    }
+                }
+            });
+        });
+
+        function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.remove('opacity-0');
+    setTimeout(() => {
+        toast.classList.add('opacity-0');
+    }, 3000);
+}
+
+
+        // Additional utility functions
+        function navigateTo(sectionId) {
+            const target = document.querySelector(sectionId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                history.pushState({ section: sectionId }, '', sectionId);
+            }
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function goForward() {
+            window.history.forward();
+        }
+        
+    </script>
+</body>
+</html>
